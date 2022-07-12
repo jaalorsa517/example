@@ -1,49 +1,39 @@
-#btn{
-  background-color: aquamarine;
-}
-.btn{
-  background-color: #323
-}
-*[gris]{
-  background-color: #ccc
-}
-button{ 
-  background-color: #34f
-}
-#btn[amarillo]{
-  background-color: #ff0 ;
+:root{
+  --colorFondo: green;
 }
 
-
-.main {
-  display: flex;
+.main{
   gap: 15px;
 }
-.card {
-  width: 300px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2); */
-}
-.card__title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #030;
-  padding: 0.5rem;
+
+.main__info{
+  padding: 5px;
+  position: relative;
   text-align: center;
-}
-.card__title--red {
-  color: red;
+  font-size: 1.1em;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px gray;
+  cursor: pointer;
 }
 
-.card__img {
-  margin: auto;
-  width: 90%;
-  height: 200px;
-  background: #00bcd4;
-  background-size: cover;
-  background-position: center;
+.main__info:hover{
+  background-color: aqua;
 }
+
+.main__info::after{
+  content: "";
+  position: absolute;
+  top:-30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 15px solid var(--colorFondo);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid transparent;
+}
+
+.green {
+  background-color: var(--colorFondo);
+  color: white;
+}
+

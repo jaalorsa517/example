@@ -1,0 +1,27 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaalorsa517/example.git"
+  },
+  "keywords": [
+    "js",
+    "html"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaalorsa517/example/issues"
+  },
+  "homepage": "https://github.com/jaalorsa517/example#readme",
+  "devDependencies": {
+    "vite": "^2.9.14"
+  }
+}
